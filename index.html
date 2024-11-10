@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the Footballer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="starting-page" id="start-page">
+    <h1>Guess the Footballer</h1>
+    <p>Select a difficulty level:</p>
+    <button onclick="selectLevel('easy')">Easy</button>
+    <button onclick="selectLevel('medium')">Medium</button>
+    <button onclick="selectLevel('hard')">Hard</button>
+  </div>
+
+  <div class="game-page" id="game-page" style="display: none;">
+    <button onclick="backToMenu()" class="back-button">Back to Menu</button>
+    <h2 id="career-path"></h2>
+    <div class="score-timer">
+      <p>Score: <span id="score">0</span></p>
+    </div>
+    <input type="text" id="player-guess" placeholder="Enter Player's Last Name">
+    <button onclick="checkGuess()">Submit</button>
+    <button onclick="revealHint()">Hint</button>
+    <button onclick="revealPlayer()">Reveal Player</button>
+    <p id="result-message"></p>
+    <div class="player-image" id="player-image"></div>
+    <p id="best-moment" style="display: none;"></p>
+    <button onclick="nextPlayer()" id="next-player-btn" style="display: none;">Next Player</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

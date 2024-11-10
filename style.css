@@ -1,0 +1,231 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
+  color: white;
+  margin: 0;
+}
+
+h1, h2 {
+  animation: fadeIn 1s ease-in-out;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background: #FFD700;
+  color: #1a1a1a;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #ff4500;
+}
+
+.starting-page, .game-page {
+  text-align: center;
+}
+
+.back-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #1a1a1a;
+  color: white;
+}
+
+#result-message {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.player-image img {
+  width: 150px;
+  height: auto;
+  margin-top: 15px;
+  display: none;
+}
+
+.correct-animation {
+  animation: correctBounce 1s ease-in-out forwards;
+}
+
+.incorrect-animation {
+  animation: incorrectShake 0.5s ease-in-out forwards;
+}
+
+@keyframes correctBounce {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+@keyframes incorrectShake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  75% { transform: translateX(10px); }
+}
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
+  color: white;
+  margin: 0;
+}
+
+/* Animations */
+@keyframes correctBounce {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+@keyframes incorrectShake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  75% { transform: translateX(10px); }
+}
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d); /* Original background */
+  color: white;
+  margin: 0;
+}
+
+/* Animations */
+@keyframes correctBounce {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+@keyframes incorrectShake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  75% { transform: translateX(10px); }
+}
+
+.starting-page {
+  text-align: center;
+}
+
+.game-page {
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+button {
+  background-color: #fdbb2d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #b21f1f;
+}
+
+.score-timer {
+  margin: 20px 0;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.player-image img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d); /* Original background */
+  color: white;
+  margin: 0;
+}
+
+/* Animations */
+@keyframes correctBounce {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+@keyframes incorrectShake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  75% { transform: translateX(10px); }
+}
+
+.starting-page {
+  text-align: center;
+}
+
+.game-page {
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+button {
+  background-color: #fdbb2d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #b21f1f;
+}
+
+.score-timer {
+  margin: 20px 0;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.player-image img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
